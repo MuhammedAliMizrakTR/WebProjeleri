@@ -1,0 +1,39 @@
+.wrapper
+{
+    /* margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px; */
+    margin : 50px 100px 50px 100px;
+    /* margin: 50px 100px; x ve y olarak */
+    /*margin : 50px */ /* 4 değer için tek veri*/
+    /* border-width : 4px;
+    border-style: dotted;
+    border-color: blue; */
+
+    border: 2px solid orangered;
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+
+        padding: 20px;
+
+    background-color: antiquewhite;
+    }
+
+    header,footer
+    {
+        background-color: bisque;
+        padding: 10px;
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+    }
+
+    body
+    {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+

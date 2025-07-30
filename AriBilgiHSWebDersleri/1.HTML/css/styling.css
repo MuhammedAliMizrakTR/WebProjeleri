@@ -1,0 +1,37 @@
+
+/* body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        div {
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff; }*/
+
+        /* Dökuman içi stil kullanımı */
+        h2 {
+            color: #333;
+            font-size: 24px;
+            background-color: #e0e0e0;
+        }
+/* .ile yazarsak class
+# le yazarsak id
+
+direk html elementleri ile yazarsak her hangi birşey yazmadan direkt etkiler...
+
+
+*/
+        .text{
+
+            background-color: yellow;
+            color:royalblue;
+            font-weight: bold;
+        }
+        #link {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
