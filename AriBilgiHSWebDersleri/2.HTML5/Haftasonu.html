@@ -1,70 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Websitelerimiz</title>
-
-    <style>
-        body{
-            background-color: rgb(156, 243, 243);
-            font-size: large;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: auto;
-            }
-            .container {
-      width: 80%;
-      margin: 40px auto;
-    }
-    .file-description {
-      margin-bottom: 20px;
-    }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haftasonu</title>
+    <style>
+        body{
+            background-color: rgb(156, 243, 243);
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: auto;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            color: #005f73;
+        }
+         h2 {
+            color: #005f73;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        details summary {
+            font-weight: bold;
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        details p {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-    <h1>Websitelerimiz</h1>
-    <h2>İlk Çalışmamız</h2>
-    <p class="file-description">Bu dosya basit bir webistesi oluşturur </p>
-    <iframe src="AriBilgiHSWebDersleri/1.HTML/index.html" frameborder="1" width="100%" height="100px"></iframe>
-    <hr>
-    <h2>Temel Etiketler</h2>
-    <p class="file-description">Bu dosya html'de kullanılan temel etiketleri ve kavramları gösterir. </p>
-    <iframe src="AriBilgiHSWebDersleri/1.HTML/TemelEtiketler.html" frameborder="1" width="100%" height="500px"></iframe>
-    <hr>
-    <h2>Görsel Ve Linkler</h2>
-    <p class="file-description">Bu dosya html'de kullanılan görsel ekleme ve link ekleme işlemlerinin nasıl yapıldığını gösterir. </p>
-    <iframe src="AriBilgiHSWebDersleri/1.HTML/GorselveLinkler.html" frameborder="1" width="100%" height="500px"></iframe>
-    <hr>
-    <h2>Listeleme İşlemleri</h2>
-    <p class="file-description">Bu dosya html'de kullanılan liste oluşturma ve düzenlemenin nasıl yapilabileceğini gösterir. </p>
-    <iframe src="AriBilgiHSWebDersleri/1.HTML/ListelemeIslemleri.html" frameborder="1" width="100%" height="500px"></iframe>
-    <hr>
-    <h2>Tablolama İşlemleri</h2>
-    <p class="file-description">Bu dosya html'de kullanılan tablo oluşturma ve düzenlemenin nasıl yapilabileceğini gösterir. </p>
-    <iframe src="AriBilgiHSWebDersleri/1.HTML/TablolamaIslemleri.html" frameborder="1" width="100%" height="500px"></iframe>
-    <hr>
-    <h2>Div</h2>
-    <p class="file-description">Bu dosya html'de kullanılan div kavramını ne işe yaradığını ve mudillerinin ne olup nasıl kullanabileceğini gösterir. </p>
-    <iframe src="AriBilgiHSWebDersleri/1.HTML/Div.html" frameborder="1" width="100%" height="500px"></iframe>
-    <hr>
-    <h2>Profil</h2>
-    <p class="file-description">Bu dosya bir profil örneği olup içerisinde temel html ve basit form kullanımını içerir. </p>
-    <iframe src="AriBilgiHSWebDersleri/1.HTML/Profil.html" frameborder="1" width="100%" height="500px"></iframe>
-    <hr>
-    <h2>FormTasarimi</h2>
-    <p class="file-description">Bu dosya html'de kullanılan form oluşturma ve tasarlamanın nasıl yapilabileceğini gösterir. </p>
-    <iframe src="AriBilgiHSWebDersleri/1.HTML/FormTasarimi.html" frameborder="1" width="100%" height="500px"></iframe>
-    <hr>
-    <h2>Content Editable</h2>
-    <p class="file-description">Bu dosya html'de kullanılan contenteditable tag'inin ne işe yaradığını ve nasıl kullanılabileceğini anlatır. </p>
-    <iframe src="AriBilgiHSWebDersleri/2.HTML5/ContentEditable.html" frameborder="1" width="100%" height="500px"></iframe>
-    <hr>
-    <h2>Data List ve Description List</h2>
-    <p class="file-description">Bu dosya html'de kullanılan datalist ve description list'i oluşturma ve düzenlemenin nasıl yapilabileceğini gösterir. </p>
-    <iframe src="AriBilgiHSWebDersleri/2.HTML5/DataListveDescriptionList.html" frameborder="1" width="100%" height="500px"></iframe>
+    <div class="container">
+        <h1>Websitelerimiz</h1>
+        <hr>
+        <h2>İlk Çalışmamız</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya çok basit bir websitesi oluşturur </p>
+            <iframe src="AriBilgiHSWebDersleri/1.HTML/index.html" frameborder="1" width="100%" height="100px"></iframe>
+        </details>
+        <hr>
 
-    </div>
 
+        <h2>Temel Etiketler</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya html'de kullanılan temel etiketleri ve kavramları gösterir.</p>
+            <iframe src="AriBilgiHSWebDersleri/1.HTML/TemelEtiketler.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>Görsel Ve Linkler</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya html'de kullanılan görsel ekleme ve link ekleme işlemlerinin nasıl yapıldığını gösterir.</p>
+            <iframe src="AriBilgiHSWebDersleri/1.HTML/GorselveLinkler.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>Listeleme İşlemleri</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya html'de kullanılan liste oluşturma ve düzenlemenin nasıl yapilabileceğini gösterir.</p>
+            <iframe src="AriBilgiHSWebDersleri/1.HTML/ListelemeIslemleri.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>Tablolama İşlemleri</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya html'de kullanılan tablo oluşturma ve düzenlemenin nasıl yapilabileceğini gösterir.</p>
+            <iframe src="AriBilgiHSWebDersleri/1.HTML/TablolamaIslemleri.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>Div</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya html'de kullanılan div kavramını ne işe yaradığını ve modüllerinin ne olup nasıl kullanabileceğini gösterir.</p>
+            <iframe src="AriBilgiHSWebDersleri/1.HTML/Div.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>Profil</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya bir profil örneği olup içerisinde temel html ve basit form kullanımını içerir.</p>
+            <iframe src="AriBilgiHSWebDersleri/1.HTML/Profil.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>Form Tasarımı</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya html'de kullanılan form oluşturma ve tasarlamanın nasıl yapilabileceğini gösterir.</p>
+            <iframe src="AriBilgiHSWebDersleri/1.HTML/FormTasarimi.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>Content Editable</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya html'de kullanılan contenteditable tag'inin ne işe yaradığını ve nasıl kullanılabileceğini anlatır.</p>
+            <iframe src="AriBilgiHSWebDersleri/2.HTML5/ContentEditable.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>Data List ve Description List</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya html'de kullanılan datalist ve description list'i oluşturma ve düzenlemenin nasıl yapilabileceğini gösterir.</p>
+            <iframe src="AriBilgiHSWebDersleri/2.HTML5/DataListveDescriptionList.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>Details</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya html'de kullanılan akordiyon menü oluşturma ve düzenlemenin nasıl yapilabileceğini gösterir.</p>
+            <iframe src="AriBilgiHSWebDersleri/2.HTML5/Details.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>İFrame</h2>
+        <details>
+            <summary>Detayları Göster</summary>
+            <p class="file-description">Bu dosya html'de kullanılan iframe ile video, websiteleri içe aktarmanın ve düzenlemenin nasıl yapilabileceğini gösterir.</p>
+            <iframe src="AriBilgiHSWebDersleri/2.HTML5/iFrame.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>İmage Mapping</h2>
+        <details>
+            <summary>İmage Mapping</summary>
+            <p class="file-description">Bu dosya html'de kullanılan fotoğraflara nasıl link atanabileceğini anlatır.</p>
+            <iframe src="AriBilgiHSWebDersleri/2.HTML5/imagemapping.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+        <hr>
+
+
+        <h2>İnput Types</h2>
+        <details>
+            <summary>İnput Types</summary>
+            <p class="file-description">Bu dosya html'de kullanılan input tiplerinin neler olduğunu ve nasıl kullanabileceğini anlatır.</p>
+            <iframe src="AriBilgiHSWebDersleri/2.HTML5/inputTypes.html" frameborder="1" width="100%" height="500px"></iframe>
+        </details>
+    </div>
+    <footer>
+        <p>&copy; 2025 Muhammed Ali Projects tüm hakları saklıdır.</p>
+    </footer>
 </body>
 </html>
