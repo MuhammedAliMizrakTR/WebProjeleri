@@ -1,0 +1,39 @@
+body{
+/*tüm tarayıcılar sıfırlama*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ #m1{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+#m1 li{
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#m1 li a{
+
+    display: block;
+    padding: 12px 14px;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+}
+
+#m1 li a:hover{
+
+    background-color: blue;
+}
+
+
+#m1 .etkin{
+    background-color: gray;
+}

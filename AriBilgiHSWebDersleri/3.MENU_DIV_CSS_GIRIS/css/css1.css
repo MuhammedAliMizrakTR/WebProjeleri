@@ -1,0 +1,58 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#kutu1{
+
+    height: 150px;
+    width: 150px;
+    background-color: cadetblue;
+    color: beige;
+    float: left;
+    margin-right: 10px;
+
+}
+
+#kutu2{
+
+    height: 150px;
+    width: 150px;
+    background-color: aquamarine;
+    color: beige;
+    float: left;
+    margin-right: 10px;
+}
+
+#kutu3{
+
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    color: beige;
+    float: left;
+    margin-right: 10px;
+}
+
+#kutu4{
+
+    height: 150px;
+    width: 150px;
+    background-color: burlywood;
+    color: beige;
+    float: left;
+    margin-right: 10px;
+}
+
+#kutu5{
+
+    height: 80px;
+    width: 630px;
+    background-color: blueviolet;
+    color: beige;
+   clear: both;
+    margin-top: 10px;
+    float: left;
+}

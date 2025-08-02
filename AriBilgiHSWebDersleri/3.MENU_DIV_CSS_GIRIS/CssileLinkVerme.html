@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Linkler</title>
+
+    <style>
+        /*
+        
+        Linklerin durumları
+
+        link : ilk hali
+        visited : ziyaret edilmiş tıklanmış link
+        active : üzerine tıklandığı an
+        hover : mouse ile üzerine gelme durumu
+
+
+
+        : ikinokta ile yazılan css lere psedo css denir.
+        */
+
+        a.link1:link, a.link1:visited{
+            background-color: red;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        a.link1:active, a.link1:hover{
+
+            background-color: black;
+        }
+
+
+
+
+            a.link2:link, a.link2:visited{
+            background-color: rgb(1, 253, 64);
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a.link2:active, a.link2:hover{
+
+            background-color: rgb(0, 102, 255);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <a href="#" class="link1">Hakkımızda</a> 
+    <a href="#" class="link2">İletişim</a>
+
+    <a href="#"> Ana Sayfa</a>
+
+</body>
+</html>

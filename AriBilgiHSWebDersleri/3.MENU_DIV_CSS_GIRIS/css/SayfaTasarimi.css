@@ -1,0 +1,52 @@
+#mainContainer{
+
+background-color: red;
+width: 800px;
+height: 1000px;
+
+margin-left: auto;
+margin-right: auto;
+
+}
+
+
+#banner{
+
+    background-color: saddlebrown;
+    width: 800px;
+    height: 150px;
+}
+
+
+#menuSol{
+
+    background-color: lightgray;
+    width: 150px;
+    height: 700px;
+    float: left;
+}
+
+#content{
+
+    background-color: lightyellow;
+    width: 500px;
+    height: 700px;
+    float:left;
+    
+}
+
+#sag{
+
+    background-color: lightcyan;
+    width: 150px;
+    height: 700px;
+    float: left;
+}
+
+#footer{
+
+    background-color: rosybrown;
+    width: 800px;
+    height: 150px;
+    clear: both;
+}

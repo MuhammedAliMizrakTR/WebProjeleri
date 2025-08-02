@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tasarımı</title>
+
+<style>
+
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+    }
+
+    input[type=text],select{
+
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        
+
+    }
+
+
+input[type=submit]{
+
+    width: 100%;
+    background-color: #ffcc66;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+
+    background-color: #e6b34c;
+}
+
+
+div{
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+margin: 20px auto;
+max-width: 500px;
+
+}
+
+
+</style>
+
+</head>
+<body>
+    
+
+<h2 style="text-align: center;">Html  Form Tasarımı </h2>
+
+<div>
+
+<form>
+
+<label for="isim">İsim</label>
+<input type="text" name="isim" id="isim" placeholder="İsminizi Giriniz">
+
+<label for="soyisim">Soyisim</label>
+<input type="text" name="soyisim" id="soyisim" placeholder="Soyisminizi giriniz">
+
+<label for="Sehir">Şehir</label>
+<select id="Sehir" name="Sehir">
+    <option value="İstanbul">İstanbul</option>
+    <option value="Ankara">Ankara</option>
+    <option value="İzmir">İzmir</option>
+
+
+</select>
+
+<input type="submit" value="Gönder">
+
+</form>
+
+
+
+</div>
+
+
+</body>
+</html>

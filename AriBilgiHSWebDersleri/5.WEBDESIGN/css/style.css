@@ -1,0 +1,129 @@
+body,h1,ul,li{
+
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background: url('images/ornek.jpg') black;
+    font-family: sans-serif;
+}
+
+.sayfa{
+    width: 950px;
+    margin: 50px auto;
+
+}
+
+
+.orta{
+    margin-top: 15px;
+    background-color: #333;
+}
+
+.orta-sol
+{
+    float: left;
+    width: 450px;
+}
+
+.orta-sag{
+    float: left;
+    margin: 15px;
+    width: 470px;
+    color:#bbb;
+}
+
+
+.alt{
+
+    background: #555;
+    padding: 20px;
+    text-align: center;
+    color:#fff;
+
+    border-radius: 15px;
+}
+
+.alt a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.temizle{
+
+    clear: both;
+}
+
+
+.baslik{
+
+    float:left;
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
+}
+
+#menu{
+
+    float: right;
+    list-style: none;
+    margin-top: 10px;
+
+}
+
+#menu li{
+
+    float: left;
+}
+
+#menu li a{
+
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+#menu a:hover{
+    background-color: #444;
+    border-radius: 15px;
+}
+
+#menu .etkin{
+    background-color: gray;
+    border-radius: 15px;
+}
+                .iletisim-form {
+                    width: 400px;
+                    padding: 20px;
+                    background-color: gray;
+                    border: 1px solid #e6e6e6;
+                    border-radius: 5px;
+                }
+                .iletisim-form label {
+                    margin-bottom: 10px;
+                }
+                .iletisim-form input[type="text"], .iletisim-form input[type="email"], .iletisim-form textarea {
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                .iletisim-form input[type="submit"] {
+                    width: 100%;
+                    background-color: #ffcc66;
+                    color: gray;
+                    padding: 14px 20px;
+                    margin: 8px 0;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                .iletisim-form input[type="submit"]:hover {
+                    background-color: #e6b34c;
+                }

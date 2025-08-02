@@ -1,0 +1,57 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#3449E5 ;
+}
+
+/*
+
+R G B 
+
+#11 55 77
+
+*/
+
+
+li{
+    display: inline-block;
+}
+
+
+li a{
+
+    display: block;
+    color:#ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #f33912;
+}
+
+
+ul li ul{
+    background-color: #3449E5;
+    display: none;
+    width: 100px;
+    position: absolute;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+li ul li{
+    display: block;
+}
