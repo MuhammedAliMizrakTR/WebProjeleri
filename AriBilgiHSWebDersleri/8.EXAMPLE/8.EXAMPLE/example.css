@@ -1,0 +1,345 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#app{
+
+display: grid;
+grid-template-columns: 250px 1fr;
+grid-template-areas: 
+
+'h h'
+'sc mc'
+'cf cf'
+'f f';
+
+}
+
+
+.header{
+
+grid-area: h;
+}
+
+
+.side-content{
+
+    background-color: steelblue;
+    grid-area: sc;
+
+}
+
+.main-content{
+    background-color: tan;
+    grid-area: mc;
+}
+
+.contact-form{
+    background-color: tomato;
+    grid-area: cf;
+}
+
+.footer
+{
+    background-color: yellowgreen;
+    grid-area: f;
+}
+
+
+/*TOOLBAR START*/
+
+.toolbar{
+    background-color: tomato;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.brand-logo, .nav-link{
+
+    text-decoration: none;
+    color: snow;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    transition: 200ms;
+}
+
+
+.brand-logo{
+
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.brand-logo:hover, .nav-link:hover{
+    background-color: slateblue;
+}
+
+.nav-list{
+list-style-type: none;
+display: flex;
+
+}
+.nav-item{
+
+    display: flex;
+}
+
+/*TOOLBAR END*/
+
+
+/*SIDE CONTENT START*/
+
+.side-title{
+
+    margin: 20px;
+    color: snow;
+}
+
+.links-wrapper{
+
+    margin : 20px;
+}
+
+.side-list{
+
+    list-style-type: none;
+}
+
+.side-link{
+
+    color: snow;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    border-radius: 4px;
+    transition: 200ms;
+}
+
+.side-link:hover{
+
+    background-color: tomato;
+}
+
+
+/*SIDE CONTENT END*/
+
+/*MAIN CONTENT START*/
+.main-content{
+
+    padding: 20px;
+}
+
+.main-header{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products-grid{
+
+    margin-top: 15px;
+    display: grid;
+    gap:15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product-card{
+
+    background-color: snow;
+    border-radius: 4px;
+    border: 1px solid slategray;
+}
+
+.btn{
+
+    background-color: rgb(48, 199, 24);
+    color: snow;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 200ms;
+    width: 100%;
+}
+.ara{
+
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid slategray;
+}
+
+.btn1{
+
+    background-color: rgb(48, 199, 24);
+    color: snow;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 200ms;
+    width : 90px;
+}
+
+/* MAIN CONTENT END */
+
+/* CONTACT FORM START */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+}
+
+.details{
+    text-align: center;}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button[type="submit"] {
+    width: 100%;
+    background-color: rgb(48, 199, 24);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: rgb(48, 199, 24);
+}
+
+/* CONTACT FORM END */
+
+/* FOOTER START */
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* FOOTER END */
+
+
+/* ABOUT US START */
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin: 20px auto;
+    background-color: snow;
+    border-radius: 4px;
+    border: 1px solid slategray;
+    max-width: 800px;
+}
+
+.about-us img{
+    width: 50%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.about-us p{
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ABOUT US END */
+
+/* LOGIN FORM START */
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin: 20px auto;
+    background-color: snow;
+    border-radius: 4px;
+    border: 1px solid slategray;
+    max-width: 400px;
+}
+
+.login-form h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form label{
+    margin-bottom: 10px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"]{
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    outline: none;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus{
+    background-color: #ddd;
+}
+
+.login-form button[type="submit"]{
+    width: 100%;
+    background-color: rgb(48, 199, 24);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover{
+    background-color: rgb(48, 199, 24);
+}
+
+/* LOGIN FORM END */
+

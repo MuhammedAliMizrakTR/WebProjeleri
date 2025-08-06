@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid ve Flex Uygulaması - kitapcidukkani.com</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="AriBilgiHSWebDersleri/8.EXAMPLE
+/example.css">
+</head>
+<body>
+    
+<div id="app">
+
+    <header class="header">
+
+        <!-- TOOLBAR START -->
+
+        <nav class="toolbar">
+            <a href="#" class="brand-logo">Kitapcidukkani.com</a>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="example.html" class="nav-link">Ana Sayfa</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kitaplar.html" class="nav-link">Kitaplar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="uyegirisi.html" class="nav-link">Üye Girişi</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- TOOLBAR END -->
+
+    </header>
+
+
+<!-- SIDE CONTENT START -->
+
+<aside class="side-content">
+
+    <h3 class="side-title">Kitap Türleri</h3>
+
+    <div class="links-wrapper">
+        <ul class="side-list">
+            <li class="side-item">
+                <a href="kitaplar.html" class="side-link">Roman</a>
+            </li>
+            <li class="side-item">
+                <a href="kitaplar.html" class="side-link">Hikaye</a>
+            </li>
+            <li class="side-item">
+                <a href="kitaplar.html" class="side-link">Biyografi</a>
+            </li>
+            <li class="side-item">
+                <a href="kitaplar.html" class="side-link">Bilim</a>
+            </li>
+            <li class="side-item">
+                <a href="kitaplar.html" class="side-link">Tarih</a>
+            </li>
+            <li class="side-item">
+                <a href="kitaplar.html" class="side-link">Din</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+</aside>
+
+
+
+
+<!-- SIDE CONTENT END -->
+
+
+<!-- MAIN CONTENT START -->
+
+<main class="main-content">
+    <header class="main-header">
+        <h2>Arama sonuçları 7 kitap bulundu...</h2>
+        <div class="search-form">
+            <input type="text"  class ="ara" placeholder="Arama yapınız...">
+            <button class="btn1">ARA</button>
+
+        </div>
+
+    </header>
+
+
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="https://unsplash.it/300/200" alt="Kitap 1" class="card-img">
+            <h4 class="card-title">Kitabın Adı</h4>
+            <p class="card-text">Kitap hakkında bilgiler...</p>
+            <div class="card-actions">
+                <button class="btn">SATIN AL</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://unsplash.it/300/201" alt="Kitap 2" class="card-img">
+            <h4 class="card-title">Kitabın Adı</h4>
+            <p class="card-text">Kitap hakkında bilgiler...</p>
+            <div class="card-actions">
+                <button class="btn">SATIN AL</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://unsplash.it/301/200" alt="Kitap 3" class="card-img">
+            <h4 class="card-title">Kitabın Adı</h4>
+            <p class="card-text">Kitap hakkında bilgiler...</p>
+            <div class="card-actions">
+                <button class="btn">SATIN AL</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://unsplash.it/302/200" alt="Kitap 4" class="card-img">
+            <h4 class="card-title">Kitabın Adı</h4>
+            <p class="card-text">Kitap hakkında bilgiler...</p>
+            <div class="card-actions">
+                <button class="btn">SATIN AL</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://unsplash.it/300/202" alt="Kitap 5" class="card-img">
+            <h4 class="card-title">Kitabın Adı</h4>
+            <p class="card-text">Kitap hakkında bilgiler...</p>
+            <div class="card-actions">
+                <button class="btn">SATIN AL</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://unsplash.it/303/200" alt="Kitap 6" class="card-img">
+            <h4 class="card-title">Kitabın Adı</h4>
+            <p class="card-text">Kitap hakkında bilgiler...</p>
+            <div class="card-actions">
+                <button class="btn">SATIN AL</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://unsplash.it/300/203" alt="Kitap 7" class="card-img">
+            <h4 class="card-title">Kitabın Adı</h4>
+            <p class="card-text">Kitap hakkında bilgiler...</p>
+            <div class="card-actions">
+                <button class="btn">SATIN AL</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</main>
+
+
+<!-- MAIN CONTENT END -->
+
+<!-- CONTACT FORM START -->
+
+<section class="contact-form">
+    <h2>İletişim formu</h2>
+<details class ="details">
+    <summary> </summary>
+    <form class ="contact-form" action="#" method="post">
+        <div>
+            <label for="name">Adınız Soyadınız:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div>
+            <button type="submit">Gönder</button>
+        </div>
+    </form>
+    </details>
+
+    
+</section>
+
+<!-- CONTACT FORM END -->
+<footer class="footer">&copy; 2025 Muhammed Ali Mızraklı</footer>
+
+
+
+</div>
+
+
+</body>
+</html>
