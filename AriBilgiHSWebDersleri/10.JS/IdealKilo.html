@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İdeal Kilo Hesaplayıcı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<script>
+
+function hesapla(){
+
+var boy = parseInt(document.getElementById('boy').value);
+var kilo = parseInt(document.getElementById('kilo').value);
+var dYil = parseInt(document.getElementById('dyil').value);
+
+var mForm = document.getElementById('myForm');
+
+var k=0;
+if(mForm[3].checked){
+
+    k=0.8;
+}
+else if(mForm[4].checked)
+{
+    k=0.9;
+}
+else
+{
+    k=0;
+}
+
+
+
+var gecerliTarih = new Date();
+var yas = gecerliTarih.getFullYear() - dYil;
+
+
+var ideal = (boy-100+yas/10)*k;
+
+if(ideal==kilo){
+
+    document.getElementById('sonuc').innerText = "Fitsiniz... ideal kilonuz : " + ideal;
+}
+
+else if(ideal<kilo){
+
+    document.getElementById('sonuc').innerText = "Kilo var biraz... ideal kilonuz : " + ideal;
+}
+
+else
+{
+document.getElementById('sonuc').innerText = "Azıcık kilo al... ideal kilonuz : " + ideal;
+
+}
+    
+}
+
+</script>
+
+</head>
+<body>
+    
+
+<div class="container">
+<h1>İdeal Kilo Hesaplayıcı</h1>
+<hr>
+
+<form id="myForm">
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Boy Giriniz : </label>
+  <input type="text" class="form-control" id="boy">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Kilo Giriniz : </label>
+  <input type="text" class="form-control" id="kilo">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Doğum Yılı Giriniz : </label>
+  <input type="text" class="form-control" id="dyil">
+</div>
+
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="cinsiyet" id="rdKadin">
+  <label class="form-check-label" value="Kadın">
+    Kadın
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="cinsiyet" id="rdErkek">
+  <label class="form-check-label" value="Erkek">
+    Erkek
+  </label>
+</div>
+
+
+<div id="sonuc" class="form-control"></div>
+
+ <div class="col-auto">
+    <button type="button" class="btn btn-primary mb-3" onclick="hesapla()">Hesapla</button>
+  </div>
+
+
+</form>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

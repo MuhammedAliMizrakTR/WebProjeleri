@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button</title>
+
+    <script>
+        function cevapkontrol(){
+            var myQuiz = document.getElementById('quizz');
+
+            if(myQuiz[1].checked)
+            {
+                alert("Doğru Cevap");
+            }
+            else
+            {
+                alert("Yanlış Cevap");
+            }
+            
+        }
+
+    </script>
+
+</head>
+<body>
+    
+<h1>Quiz Örnek (Radio Button)</h1>
+<hr>
+
+<form id="quizz" onsubmit="cevapkontrol()">
+
+<p>Aşağıdakilerden hangisi türkiyenin başkentidir?</p>
+
+<input type="radio" name="sehir" value="İstanbul">
+<label>İstanbul</label>
+
+<input type="radio" name="sehir" value="Ankara">
+<label>Ankara</label>
+
+<input type="radio" name="sehir" value="İzmir">
+<label>İzmir</label>
+
+<input type="radio" name="sehir" value="Bursa">
+<label>Bursa</label>
+
+<br>
+
+<input type="submit" value="Gönder">
+
+
+</form>
+
+
+
+</body>
+</html>

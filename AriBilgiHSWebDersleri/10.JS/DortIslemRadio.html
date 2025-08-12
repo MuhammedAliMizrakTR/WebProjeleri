@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button ile 4 işlem</title>
+
+<script>
+
+    function hesapla(){
+
+        myForm = document.querySelector('#radioIslem');
+
+        s1 = Number(myForm[0].value);
+        s2 = Number(myForm[1].value);
+
+        var sonuc;
+
+       if(myForm[2].checked){
+        sonuc =s1+s2;
+
+       }else if(myForm[3].checked){
+        sonuc =s1-s2;
+
+       }else if(myForm[4].checked){
+        sonuc =s1*s2;
+
+       }else if(myForm[5].checked){
+        sonuc =s1/s2;
+
+       }else
+       {
+        sonuc="Bir işlem seçin...";
+       }
+
+
+       document.getElementById("sonuc").value = sonuc;
+
+    }
+</script>
+
+</head>
+<body>
+    
+<h1>4 işlem radio button ile</h1>
+<hr>
+
+
+<form id="radioIslem">
+
+<label>sayı 1 :</label>
+<input type="text"><br>
+
+<label>sayı 2 :</label>
+<input type="text"><br>
+
+<br>
+
+<input type="radio" name="islem" value="Topla">Topla
+<input type="radio" name="islem" value="Cikar">Çıkar
+<input type="radio" name="islem" value="Carp">Çarp
+<input type="radio" name="islem" value="bol">Böl
+
+<br>
+
+<input type="button" onclick="hesapla()" value="Hesapla">
+<input type="text" id="sonuc">
+
+
+</form>
+
+
+</body>
+</html>

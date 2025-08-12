@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Examples</title>
+</head>
+<body>
+    
+<script>
+
+const person={
+
+    name:'John',
+    age:23,
+    sayHello : function(){
+
+        console.log('Hello, i am john');
+        return 'Merhaba...';
+    },
+
+    sayGoodBye(){
+        console.log('Goodbye everyone');
+    }
+
+
+}
+
+
+person.sayHello();
+person.sayGoodBye();
+
+console.log(person);
+
+
+
+function add(a,b){
+    console.log(a+b);
+    return a+b;
+}
+
+
+
+const functions = [
+
+function(){
+
+    console.log("Ben arrayin ilk itemiyim");
+},
+
+function(a){
+
+    console.log('a argümanını kullanabilirim', a);
+    return a;
+},
+
+person.sayHello(),
+
+
+add(5,10)
+
+
+]
+
+
+console.log(functions[0])
+console.log(functions[1](12))
+console.log(functions[2])
+console.log(functions[3])
+
+
+
+
+//Math Examples
+
+
+const x=9.4;
+const ceilX = Math.ceil(x); //Yukarı yuvarlama 
+console.log(ceilX);
+
+
+const floorX = Math.floor(x);
+console.log(floorX);
+
+const roundedX = Math.round(x);
+console.log(roundedX);
+
+
+
+const floatNumber = 10/3;
+console.log(floatNumber.toFixed(3));
+
+
+const numberstr = '44cm';
+console.log(Number(numberstr));
+console.log(parseInt(numberstr));
+
+
+
+
+//string manipulations
+
+const str1 = 'Hello';
+const str2 = 'World';
+
+console.log(str1 + ' ' + str2);
+
+const sentence = "I' m a developer";
+console.log(sentence);
+
+const firstLetter = sentence[0];
+console.log(firstLetter);
+console.log(sentence.length);
+console.log(sentence[sentence.length-1])
+
+
+//jquery
+
+//react native
+//react js
+//vue
+//flutter
+//Angular
+</script>
+
+
+
+
+</body>
+</html>

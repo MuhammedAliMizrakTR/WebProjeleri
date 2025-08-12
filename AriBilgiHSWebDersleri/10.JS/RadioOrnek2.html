@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Örneği</title>
+</head>
+<body>
+    
+
+<h3>Sevdiğiniz rengi seçiniz</h3>
+
+
+<input type="radio" name="renk" value="Kırmızı"> Kırmızı
+<input type="radio" name="renk" value="Mavi"> Mavi
+<input type="radio" name="renk" value="Yeşil"> Yeşil
+
+<button onclick="secimiGoster()">Seçimi Göster</button>
+
+
+<p id="sonuc"></p>
+
+<script>
+
+function secimiGoster(){
+
+
+let renkler = document.getElementsByName("renk");
+let secilen = "";
+
+
+for (let i = 0; i < renkler.length; i++) {
+    if(renkler[i].checked)
+{
+    secilen = renkler[i].value;
+    break;
+}
+    
+}
+
+
+if(secilen){
+
+    document.getElementById("sonuc").innerText = "Seçtiğiniz Renk "+ secilen;
+}
+else
+{
+    document.getElementById("sonuc").innerText = "Lütfen bir renk seçiniz";
+}
+
+}
+
+
+</script>
+
+
+</body>
+</html>
